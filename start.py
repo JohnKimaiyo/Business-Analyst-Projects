@@ -11,3 +11,6 @@ x = 10
 y = 15
 sum_result = x + y
 print("Sum",sum_result)
+
+difference = x - y
+print("Difference",difference)
