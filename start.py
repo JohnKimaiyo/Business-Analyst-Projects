@@ -17,3 +17,6 @@ print("Difference",difference)
 
 product = x * y
 print("Product",product)
+
+exponent = x ** y
+print("Exponenet",exponent)
