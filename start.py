@@ -14,3 +14,6 @@ print("Sum",sum_result)
 
 difference = x - y
 print("Difference",difference)
+
+product = x * y
+print("Product",product)
