@@ -20,3 +20,7 @@ print("Product",product)
 
 exponent = x ** y
 print("Exponenet",exponent)
+
+import math
+sqrt_result = math.sqrt(x)
+print("Square Root of ",x , ":", sqrt_result)
