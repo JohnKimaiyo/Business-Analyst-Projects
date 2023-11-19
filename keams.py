@@ -14,3 +14,8 @@ data = pd.read_excel(url)
 
 # describe the data
 data.describe()
+
+#plot data
+plt.scatter(data["Quantity"],data["UnitPrice"])
+plt.xlabel('Quantity')
+plt.ylabel("UnitPrice")
