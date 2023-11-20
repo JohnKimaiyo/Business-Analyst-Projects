@@ -34,3 +34,8 @@ wcss.append(kmeans.inertia_)
 plt.plot(range(1,10),wcss)
 plt.xlabel('Number of Clusters')
 plt.ylabel('WCSS')
+
+# Predict clusters
+Kmeans_news = Kmeans(4)
+Kmeans_new.fit(x_scaled)
+cluster_new["cluster_pred"] = kmeans_new_predict(x_scaled)
