@@ -23,3 +23,11 @@ plt.ylabel("UnitPrice")
 # Scale data
 x_scaled = preprocessing.scale(x)
 x_scaled
+
+#Find the number of centroids
+for i in range(1,10):
+kmeans = KMeans(i)
+kemens.fit(x_scaled)
+wcss.append(kmeans.inertia_)
+
+wcss
