@@ -19,3 +19,7 @@ data.describe()
 plt.scatter(data["Quantity"],data["UnitPrice"])
 plt.xlabel('Quantity')
 plt.ylabel("UnitPrice")
+
+# Scale data
+x_scaled = preprocessing.scale(x)
+x_scaled
