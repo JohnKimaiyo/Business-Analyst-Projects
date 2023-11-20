@@ -27,7 +27,10 @@ x_scaled
 #Find the number of centroids
 for i in range(1,10):
 kmeans = KMeans(i)
-kemens.fit(x_scaled)
+kmeans.fit(x_scaled)
 wcss.append(kmeans.inertia_)
 
-wcss
+
+plt.plot(range(1,10),wcss)
+plt.xlabel('Number of Clusters')
+plt.ylabel('WCSS')
