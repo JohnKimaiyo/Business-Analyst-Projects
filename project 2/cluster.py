@@ -15,3 +15,5 @@ df = pd.read_csv(r"C:\Users\jki\Desktop\Python Customer Sgementation Project Zer
 df.head()
 
 df.columns
+
+df.info()
