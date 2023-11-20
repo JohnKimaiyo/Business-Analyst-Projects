@@ -39,3 +39,5 @@ plt.ylabel('WCSS')
 Kmeans_news = Kmeans(4)
 Kmeans_new.fit(x_scaled)
 cluster_new["cluster_pred"] = kmeans_new_predict(x_scaled)
+
+cluster_new
