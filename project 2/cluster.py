@@ -17,3 +17,5 @@ df.head()
 df.columns
 
 df.info()
+
+df.describe()
