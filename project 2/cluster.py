@@ -19,3 +19,6 @@ df.columns
 df.info()
 
 df.describe()
+
+#When creating plots using Matplotlib, you get a default figure size of 6.4 for the width and 4.8 for the height (in inches).
+df.isnull().sum()
