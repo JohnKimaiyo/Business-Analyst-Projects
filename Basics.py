@@ -71,3 +71,6 @@ import matplotlib.pyplot as plt
 plt.subplot(1, 2, 1)
 
 
+b = np.array([[1.0,2.0,3.0],[3.0,4.0,5.0]])
+print(b)
+
