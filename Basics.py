@@ -58,3 +58,12 @@ longest_streak = pd.Series([13, 11, 9, 7], index=names)
 certificates_earned['Longest streak'] = longest_streak
 
 print(certificates_earned)
+
+import pandas as pd
+import numpy as np
+
+s = pd.Series(['a', 3, np.nan, 1, np.nan])
+
+print(s.notnull().sum())
+
+
