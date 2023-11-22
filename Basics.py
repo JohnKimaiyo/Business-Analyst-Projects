@@ -66,4 +66,8 @@ s = pd.Series(['a', 3, np.nan, 1, np.nan])
 
 print(s.notnull().sum())
 
+import matplotlib.pyplot as plt
+
+plt.subplot(1, 2, 1)
+
 
