@@ -98,3 +98,10 @@ import numpy as np
 my_array = np.ones((4, 2))
 
 print(my_array)
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print(arr)
+
+print(type(arr))
