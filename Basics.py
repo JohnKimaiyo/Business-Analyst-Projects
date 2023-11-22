@@ -11,3 +11,7 @@ A = np.array([
 ])
 
 print(A[:, :2])
+
+
+a = np.arange(5)
+a + 20
