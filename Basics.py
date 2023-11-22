@@ -92,3 +92,9 @@ a = np.array(([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]))
 b = np.max(a, axis=1).sum()
 print(b)
 
+import numpy as np
+
+# Create a 4x2 array with all elements set to 1.0
+my_array = np.ones((4, 2))
+
+print(my_array)
