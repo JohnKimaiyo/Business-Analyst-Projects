@@ -56,3 +56,13 @@ arr[4] = 46
 
 print(arr)
 print(x)
+
+# example 6
+import numpy as np
+
+arr = np.array([6, 7, 8, 9, 10])
+x = arr.copy()
+arr[4] = 46
+
+print(arr)
+print(x)
