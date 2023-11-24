@@ -37,3 +37,12 @@ arr[2] = 44
 
 print(arr)
 print(x)
+# example 4
+import numpy as np
+
+arr = np.array([4, 5, 6, 7, 8])
+x = arr.copy()
+arr[3] = 45
+
+print(arr)
+print(x)
