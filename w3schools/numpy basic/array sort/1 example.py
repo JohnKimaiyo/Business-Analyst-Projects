@@ -12,3 +12,10 @@ import numpy as np
 arr = np.array(['banana', 'cherry', 'apple'])
 
 print(np.sort(arr))
+
+#exampl e3
+import numpy as np
+
+arr = np.array([True, False, True])
+
+print(np.sort(arr))
