@@ -46,11 +46,21 @@ print(arr)
 
 print(type(arr))
 
-# example 
+# example 6
 
 import numpy as np
 
 arr = np.array([6,7, 8, 9, 10])
+
+print(arr)
+
+print(type(arr))
+
+# example 7
+
+import numpy as np
+
+arr = np.array([7,8, 9, 10, 11])
 
 print(arr)
 
