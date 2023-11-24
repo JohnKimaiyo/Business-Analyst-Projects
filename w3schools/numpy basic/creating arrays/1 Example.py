@@ -85,3 +85,13 @@ arr = np.array([9,10, 11, 12, 13])
 print(arr)
 
 print(type(arr))
+
+# example 10
+
+import numpy as np
+
+arr = np.array([10,11, 12, 13, 14])
+
+print(arr)
+
+print(type(arr))
