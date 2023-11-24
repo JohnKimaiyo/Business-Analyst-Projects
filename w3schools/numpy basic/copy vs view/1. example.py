@@ -17,3 +17,13 @@ arr[1] = 43
 
 print(arr)
 print(x)
+
+# example 3
+import numpy as np
+
+arr = np.array([3, 4, 5, 6, 7])
+x = arr.copy()
+arr[2] = 44
+
+print(arr)
+print(x)
