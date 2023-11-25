@@ -18,3 +18,12 @@ print(x)
 import numpy as np 
 x = np.arcsinh(1.0) 
 print(x)
+
+# example 4
+import numpy as np
+
+arr = np.array([0.1, 0.2, 0.5])
+
+x = np.arctanh(arr)
+
+print(x)
