@@ -31,3 +31,10 @@ arr = np.array([np.pi/2, np.pi, 1.5*np.pi, 2*np.pi])
 x = np.rad2deg(arr)
 
 print(x)
+
+# example 5
+import numpy as np
+
+x = np.arcsin(1.0)
+
+print(x)
