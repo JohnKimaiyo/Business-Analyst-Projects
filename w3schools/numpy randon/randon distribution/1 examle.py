@@ -17,3 +17,10 @@ from numpy import random
 x = random.rand(5)
 
 print(x)
+
+# example 4
+from numpy import random
+
+x = random.rand(3, 5)
+
+print(x)
