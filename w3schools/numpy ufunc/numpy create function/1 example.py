@@ -13,3 +13,8 @@ print(myadd([1, 2, 3, 4], [5, 6, 7, 8]))
 import numpy as np
 
 print(type(np.add))
+
+# example 3
+import numpy as np
+
+print(type(np.concatenate))
