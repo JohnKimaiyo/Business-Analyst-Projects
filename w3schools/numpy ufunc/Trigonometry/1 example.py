@@ -47,3 +47,13 @@ arr = np.array([1, -1, 0.1])
 x = np.arcsin(arr)
 
 print(x)
+
+# example 7
+import numpy as np
+
+base = 3
+perp = 4
+
+x = np.hypot(base, perp)
+
+print(x)
