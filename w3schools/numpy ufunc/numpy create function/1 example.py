@@ -18,3 +18,8 @@ print(type(np.add))
 import numpy as np
 
 print(type(np.concatenate))
+
+# example 4
+import numpy as np
+
+print(type(np.blahblah))
