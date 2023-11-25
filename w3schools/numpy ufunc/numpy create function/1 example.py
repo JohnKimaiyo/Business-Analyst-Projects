@@ -23,3 +23,11 @@ print(type(np.concatenate))
 import numpy as np
 
 print(type(np.blahblah))
+
+# example 3
+import numpy as np
+
+if type(np.add) == np.ufunc:
+  print('add is ufunc')
+else:
+  print('add is not ufunc')
