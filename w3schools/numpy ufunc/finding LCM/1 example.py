@@ -16,3 +16,12 @@ arr = np.array([3, 6, 9])
 x = np.lcm.reduce(arr)
 
 print(x)
+
+# example 3
+import numpy as np
+
+arr = np.arange(1, 11)
+
+x = np.lcm.reduce(arr)
+
+print(x)
