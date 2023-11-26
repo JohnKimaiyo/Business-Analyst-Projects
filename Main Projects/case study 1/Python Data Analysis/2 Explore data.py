@@ -23,3 +23,5 @@ df.columns
 
 # get info
 df.info
+
+df.describe()
