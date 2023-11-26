@@ -20,3 +20,6 @@ df.head()
 
 # calling our columns
 df.columns
+
+# get info
+df.info
