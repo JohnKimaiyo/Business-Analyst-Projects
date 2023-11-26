@@ -30,3 +30,13 @@ df.describe()
 
 df.isnull().sum()
 
+
+plt.figure(1, figsize = (15,6))
+n = 0
+for x in ["Age", "Annual Income (k$)"]:
+    n += 1
+    plt.subplot(1,3,n)
+    plt.subplots_adjust(hspace = 0.5,wspace = 0.5)
+    sns.distplot(df[x], bins = 15)
+    plt.title("Distplot of  {}". format (x))
+plt.show()
