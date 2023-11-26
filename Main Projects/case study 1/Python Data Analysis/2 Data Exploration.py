@@ -9,7 +9,7 @@ import plotly as py
 import plotly.graph_objs as go
 
 
-from sklearn.cluster import kmeans
+from sklearn.cluster import KMeans
 
 import warnings
 warnings.filterwarnings("ignore")
