@@ -42,5 +42,5 @@ for x in ["Age", "Annual Income (k$)"]:
 plt.show()
 
 
-sns.pairplot(df,vars = ["Age", "Annual Income (k$)","Spending Score (1-100)"])
+sns.pairplot(df,vars = ["Age", "Annual Income (k$)","Spending Score (1-100)"], hue = "Gender")
 
