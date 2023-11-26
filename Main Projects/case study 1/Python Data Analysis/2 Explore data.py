@@ -40,3 +40,7 @@ for x in ["Age", "Annual Income (k$)"]:
     sns.distplot(df[x], bins = 15)
     plt.title("Distplot of  {}". format (x))
 plt.show()
+
+
+sns.pairplot(df,vars = ["Age", "Annual Income (k$)","Spending Score (1-100)"])
+
