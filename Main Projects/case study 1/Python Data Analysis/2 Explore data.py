@@ -17,3 +17,6 @@ warnings.filterwarnings("ignore")
 # Data Exporation
 df = pd.read_csv(r"C:\Users\jki\Desktop\Python Customer Sgementation Project Zero\Main Projects\case study 1\source files\Mall_Customers.csv")
 df.head()
+
+# calling our columns
+df.columns
