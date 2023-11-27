@@ -69,6 +69,13 @@ plt.plot(np.arange(1,15),inertia,"_",aplpha= 0.5)
 plt.xlabel("Numberof clusters "),plt.ylabel("Inertia")
 plt.show()
 
+
+algorithm = (KMeans(n_cluster = 5, init = "k-means++",n_init = 10 , max_iter = 300,
+                   tol = 0.0001, random_state = 111, algorith = "elkan"))
+algorithm.fit(x2)
+label2 = algorithm.labels_
+centroids2 = algorithm.cluster_center_
+
                        
                        
 
