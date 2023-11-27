@@ -76,6 +76,10 @@ algorithm.fit(x2)
 label2 = algorithm.labels_
 centroids2 = algorithm.cluster_center_
 
+
+h = 0.02
+x_min, x_max = x2[:,0].min() - 1, x2[:0].max() +1
+y_min y_max = X2[:,1].min() - 1,X2[:,1].max()
                        
                        
 
