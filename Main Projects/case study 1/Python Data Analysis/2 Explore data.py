@@ -44,3 +44,14 @@ plt.show()
 
 sns.pairplot(df,vars = ["Age", "Annual Income (k$)","Spending Score (1-100)"], hue = "Gender")
 
+
+# 2D Clustering based on  Age and  Speding score
+plt.figure(1,figsize = (15,7))
+plt.title("Scatterplot of Age vs. Spending Score",fontsize = 20 )
+plt.xlabel("Age")
+plt.ylabel("Spending Score")
+plt.scatter (x ="Age", y = "Spending Score(1- 100)", data = df , s = 100)
+plt.show()
+
+
+
