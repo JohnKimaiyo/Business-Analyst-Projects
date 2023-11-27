@@ -61,6 +61,13 @@ for n in range (1,15):
                        tol = 0.001, random_state = 111, algorithm = "elkan"))
     algorithm.fit(X1)
     inertia.append(algorithm.inertia_)
+
+
+
+plt.figure(1,figure =(15,6))
+plt.plot(np.arange(1,15),inertia,"0")
+plt.plot(np.arange(1,15),inertia,"_",aplpha= 0.5)
+plt.xlabel("Numberof clusters  ")
                        
                        
 
