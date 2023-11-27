@@ -24,5 +24,10 @@ for n in range(1,11):
     algorithm.fit(x3)
     inertia.append(algorithm.inertia_)
 
-    
+plt.figure(1,figsize = (15,6))
+plt.plot(np.arange(1,11), inertia, "0")
+plt.plot(np.arange(1,11),inertia,"-",alpha = 0.5)
+plt.ylabel("inertia")
+plt.show()
+
 
