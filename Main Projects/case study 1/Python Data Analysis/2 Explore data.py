@@ -54,4 +54,14 @@ plt.scatter (x ="Age", y = "Spending Score(1- 100)", data = df , s = 100)
 plt.show()
 
 
+X1 = df[["Age","Spending Score (1-100)"]].iloc[:,:].values
+inertia = []
+for n in range (1,15):
+    algorithm = (KMeans(n_clusters = n ,init = "K-means++",n_init = 10, max_iter =  300,
+                       tol = 0.001, random_state = 111, algorithm = "elkan"))
+    algorithm.fit(X1)
+    inertia.append(algorithm.inertia_)
+                       
+                       
+
 
