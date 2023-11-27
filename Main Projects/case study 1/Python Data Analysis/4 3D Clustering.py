@@ -41,9 +41,47 @@ algorithm.fit(X3)
 label3 = algorithm.labels_.
 centroids3 = algorithm.cluster_centers_
 
-
 y_kmeans = algorithm.fit_predict(X3)
 df["cluster"] = pd.DataFrame(y_kmeans)
 df.head()
-            
+
+# step 4
+trace1 = go.Scatter3d(
+    x=df["Age"]
+    y = df["Spending Score(1-100)"]
+    z=df["Annual Income (k$)"]
+    mode="markers"
+    marker = dict(
+color = df["clluster"],
+size = 10,
+line = dict(
+    color = df["cluster"]
+    size=10,
+    line =dict(
+        color = df ["Cluster"],
+        width = 12
+    ),
+    opacity = 0.8
+)
+
+data = [trace1]
+layout = go.Layout(
+    title ="Clusters based on Age , Income and Spending Scores",
+    scene = dict (
+        xaxis = dict(title = "Age"),
+        yaxis = dict(title = "Spending Score"),
+        zaxis = dict(title= "Annual Income")
+    )
+)
+
+fig = go.Figure(data = data ,layout = layout)
+py.offline.iplot(fig)
+    )
+)
+df.head()
+
+df.to_cv("segment_customer.csv", index = False)
+
+
+
 
