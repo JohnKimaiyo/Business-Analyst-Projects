@@ -83,3 +83,32 @@ print(div_ans)
 # Perofmring division using numpy functions
 div_ans = np.divide(a,b)
 print(div_ans)
+
+#Python Numpy Array Indexing
+
+# Python program to demostrate
+#The use of index arrays
+import numpy as np
+
+# create a sequence of intergers from
+# 10 to 1 with a tep -2
+a= np.arrange(10,1,-2)
+print(a)
+
+# indexes are specified inside the np.array method
+newarr = a[np.array([3,1,2])]
+print(newarr)
+
+
+# Numpy Arrya Slicing
+import numpy as np
+
+# arrange elements from 0 to 19
+a = np.arrange(20)
+print(a)
+
+# a[start : stop;step]
+print(-a[8:17:1])
+
+#The operator means all elemnets till the end
+print(a[10:])
