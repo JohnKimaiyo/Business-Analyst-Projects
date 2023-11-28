@@ -1,3 +1,15 @@
+. There are six steps for Data Analysis. They are: 
+
+Ask or Specify Data Requirements
+Prepare or Collect Data
+Clean and Process
+Analyze
+Share
+Act or Report
+
+
+
+
 	Data Collection
 	Segments Identification
 	Develop sales & marketing strategies
