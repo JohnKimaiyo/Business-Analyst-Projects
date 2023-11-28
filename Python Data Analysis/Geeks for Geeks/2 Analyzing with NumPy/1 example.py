@@ -68,3 +68,18 @@ print(sub_ans)
 # perfomring subtraction using numpy function
 sub_ans = np.subtract(a,b)
 print(sub_ans)
+
+# division
+import numpy as np
+ # Defining both the matrice
+ a = np.array([5,72,13,100])
+b=np.array ([2,5,10,30])
+
+
+# Perfoming divison using arithmetics opertaprs
+div_ans = a/b
+print(div_ans)
+
+# Perofmring division using numpy functions
+div_ans = np.divide(a,b)
+print(div_ans)
