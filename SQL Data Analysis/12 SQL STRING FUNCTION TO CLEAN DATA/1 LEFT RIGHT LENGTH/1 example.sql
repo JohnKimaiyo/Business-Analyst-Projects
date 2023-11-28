@@ -4,3 +4,5 @@ SELECT TOP (1000) [DepartmentID]
       ,[GroupName]
       ,LEFT([ModifiedDate],11) AS CLEANED_DATE
   FROM [AdventureWorks2019].[HumanResources].[Department]
+
+  
