@@ -14,3 +14,11 @@ plt.title("Simple Plot")
 plt.ylabel("y-axis")
 plt.xlabel("x-axis")
 plt.show()
+
+
+#example 2
+# python program to show pyplot module
+import matplotlib.pyplot as plt
+plt.plot([2,3,4,5],[2,5,10,11])
+plt.axis([1,7,1,21])
+plt.show()
