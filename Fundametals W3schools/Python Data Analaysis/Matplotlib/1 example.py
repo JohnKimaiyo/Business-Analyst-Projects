@@ -14,3 +14,4 @@ plt.title("Simple Plot")
 plt.ylabel("y-axis") 
 plt.xlabel("x-axis") 
 plt.show()
+
