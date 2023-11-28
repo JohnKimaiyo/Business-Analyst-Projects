@@ -1,0 +1,144 @@
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT * FROM CUSTOMERS
+
+  WHERE ID IN(SELECT ID FROM CUSTOMERS WHERE SALARY > 4500);
+
+-- create new table customersbkp
+  CREATE TABLE CUSTOMERS_BKP (
+   ID INT NOT NULL,
+   NAME VARCHAR(20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),
+   PRIMARY KEY (ID)
+);
+
+INSERT INTO CUSTOMERS_BKP 
+SELECT * FROM CUSTOMERS 
+WHERE ID IN (SELECT ID FROM CUSTOMERS);
+
+UPDATE CUSTOMERS
+SET SALARY = SALARY * 0.25
+WHERE AGE IN(SELECT AGE FROM CUSTOMERS_BKP WHERE AGE >=27);
+
+CREATE TABLE JANUARY (
+   ID INT NOT NULL,
+   NAME VARCHAR(21) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (26),
+   SALARY DECIMAL (19, 3),
+   PRIMARY KEY (ID)
+);
+
+-- create new table customersbkp
+  CREATE TABLE JANURAY (
+   ID INT NOT NULL,
+   NAME VARCHAR(21) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (26),
+   SALARY DECIMAL (19, 3),
+   PRIMARY KEY (ID)
+);
+
+--- create table values
+
+INSERT INTO JANUARY VALUES 
+(1, 'Ramesh', 42, 'Ahmedabad', 3000.00),
+(2, 'Khilan', 35, 'Delhi', 2500.00),
+(3, 'Kaushik', 33, 'Kota', 3000.00),
+(4, 'Chaitali', 35, 'Mumbai', 7500.00),
+(5, 'Hardik', 37, 'Bhopal', 9500.00),
+(6, 'Komal', 32, 'Hyderabad', 5500.00),
+(7, 'Muffy', 44, 'Indore', 20000.00);
+
+-- select salary over 5,500
+SELECT * FROM JANUARY
+WHERE ID IN (SELECT ID FROM CUSTOMERS WHERE SALARY > 5500);
+
+
+-- create new table
+CREATE TABLE JANURY_BKP (
+   ID INT NOT NULL,
+   NAME VARCHAR(20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),
+   PRIMARY KEY (ID)
+);
+-- inset data
+INSERT INTO JANUARY_BKP 
+SELECT * FROM JANUARY 
+WHERE ID IN (SELECT ID FROM JANUARY);
+
+-- check for data --
+SELECT * FROM JANUARY_BKP;
+
+-- update table ---
+UPDATE JANUARY
+SET SALARY = SALARY * 0.25 
+WHERE AGE IN (SELECT AGE FROM CUSTOMERS_BKP WHERE AGE >= 27 );
+
+--  check record --
+SELECT * FROM JANUARY;
+
+-- creat new table
+CREATE TABLE FEBRUARY (
+   ID INT NOT NULL,
+   NAME VARCHAR(20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),
+   PRIMARY KEY (ID)
+);
+
+-- over 4500
+SELECT * FROM CUSTOMERS 
+WHERE ID IN (SELECT ID FROM CUSTOMERS WHERE SALARY > 4500);
+
+-- ceate february table
+CREATE TABLE FEBRUARY_BKP (
+   ID INT NOT NULL,
+   NAME VARCHAR(20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),
+   PRIMARY KEY (ID)
+);
+
+--  insert date to february_bkp using subqueries
+
+INSERT INTO FEBRUARY_BKP 
+SELECT * FROM CUSTOMERS 
+WHERE ID IN (SELECT ID FROM CUSTOMERS);
+
+-- check status of updated table --
+
+SELECT * FROM FEBRUARY_BKP;
+
+-- check status
+SELECT * FROM FEBRUARY;
+ 
+ -- Ccretae new  table 
+CREATE TABLE CUSTOMERS (
+   ID INT NOT NULL,
+   NAME VARCHAR(20) NOT NULL,
+   AGE INT NOT NULL,
+   ADDRESS CHAR (25),
+   SALARY DECIMAL (18, 2),
+   PRIMARY KEY (ID)
+);
+
+-- create march dataset -
+INSERT INTO MARCH VALUES 
+(1, 'Ramesh', 32, 'Ahmedabad', 2000.00),
+(2, 'Khilan', 25, 'Delhi', 1500.00),
+(3, 'Kaushik', 23, 'Kota', 2000.00),
+(4, 'Chaitali', 25, 'Mumbai', 6500.00),
+(5, 'Hardik', 27, 'Bhopal', 8500.00),
+(6, 'Komal', 22, 'Hyderabad', 4500.00),
+(7, 'Muffy', 24, 'Indore', 10000.00);
+
+--
+SELECT * FROM MARCH 
+WHERE ID IN (SELECT ID FROM MARCH WHERE SALARY > 4500);
